@@ -1,4 +1,5 @@
 mod my_functions;
+mod other;
 
 // If we want to use all the functions in my_functions module
 // use crate::my_functions::*;
@@ -17,4 +18,6 @@ fn main() {
     my_functions::display_address(&x);
     x = 20;
     println!("x = {}", x);    
+
+    other::display_msg::display_msg();
 }
